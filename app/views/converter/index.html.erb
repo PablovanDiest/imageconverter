@@ -1,0 +1,32 @@
+<div style='text-align: center;'>
+  <h1>Image Converter</h1><span>by Pablo van Diest</span>
+  <br/>
+</div>
+
+From format: <%= select_tag 'from_format', options_for_select([ '.gif', '.jpg' ], '.gif'), :class => "select" %>
+<br/>
+To format: <%= select_tag 'to_format', options_for_select([ '.gif', '.jpg' ], '.jpg'), :class => "select" %>
+<div id='picture' class="dropzone"></div>
+<br/>
+
+<div style='text-align: center;'>
+  <%= link_to 'Do It', '#', :class => "btn success", :onclick => 'return convertFiles();' %>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('#picture').dropzone({
+      url: '/converter/upload',
+      success: function(file){
+        console.log(file);
+      }
+    });
+  });
+
+  function convertFiles(){
+    var from_format = $("#from_format").val();
+    var to_format = $("#to_format").val();
+    var url = "<%= convert_converter_index_path %>";
+    document.location.href = url + "?from_format=" + from_format + "&to_format=" + to_format;
+  }
+</script>

@@ -1,0 +1,457 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+html, body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html input.text, body input.text {
+    background-color: #C9C3E6;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 12px;
+    padding: 7px;
+    margin-bottom: 20px;
+}
+
+body {
+  background: none repeat scroll 0 0 #F1F1F1;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  vertical-align: baseline;
+}
+
+body .content {
+    margin-top: 170px;
+    margin-bottom: 170px;
+    text-align: center;
+    z-index: 5;
+}
+
+body .dialog, body .dialog label {
+    color: #BFB8E5;
+}
+
+body .dialog {
+    background-image: -moz-linear-gradient(center top , #7C76B8 0px, rgba(44, 38, 63, 0.4) 100%);
+    border: 1px solid #373553;
+    color: #BFB8E5;
+    width: 400px;
+}
+body .dialog, body #message {
+    background-repeat: repeat-x;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px #040307;
+    margin: 0 auto;
+    text-align: left;
+}
+
+body .dialog fieldset {
+    background-color: transparent;
+    border-top: 0 none;
+    border-width: 0;
+    padding: 30px 30px 10px;
+}
+
+body .dialog fieldset.submit{
+    border: medium none;
+    padding: 0 30px 30px;
+    text-align: right;
+}
+
+body .dialog fieldset.submit input.submit {
+    margin-top: 20px;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+body form fieldset.submit p, body form fieldset.submit p a {
+    color: #BFB8E5;
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body #message {
+    background-image: -moz-linear-gradient(center top , rgba(44, 38, 63, 0.9) 0px, rgba(44, 38, 63, 0.2) 100%);
+    border: 1px solid #28283F;
+    color: #BFB8E5;
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 340px;
+}
+body, td, th {
+  font-family: tahoma;
+  font-size: 12px;
+  font-style: normal;
+}
+
+#forkme {
+    background: url("/assets/forkme.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    height: 149px;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    text-indent: -1000px;
+    top: 0;
+    width: 149px;
+    z-index: 5;
+}
+
+#title {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-bottom: 2px solid #000000;  clear: both;
+  color: #000;
+  font-size: 16px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top:  10px;
+  padding-left: 10px;
+  text-align: center;
+  width: 940px;
+    /*
+  margin-top: 100px;
+  padding: 10px 0 0 20px;
+    */
+}
+
+#header {
+  clear: both;
+  overflow: hidden;
+  padding: 40px 0 0;
+}
+
+#main .block {
+  padding-top: 0px;
+  background: white;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+
+#main .block .content {
+  padding-top: 1px;
+}
+
+#main .block .content .inner {
+  padding: 0 15px 15px;
+}
+
+#main .block .content h2 {
+  margin-left: 15px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: normal;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+}
+
+#main .block .content p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+  letter-spacing: normal;
+  line-height: 1.45em;
+}
+
+#main .block-norounded {
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#ui-datepicker-div {
+  display: none;
+}
+
+.content {
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+}
+
+
+.link_actions {
+  text-align: left;
+  background-color: #00264d;
+}
+
+
+.menu_level {
+  text-align: left;
+  padding-left: 5px;
+}
+
+
+div.inner {
+  text-align: left;
+  width: 100%;
+}
+
+a { text-decoration: none; }
+a:focus { outline: thin dotted; }
+a:hover, a :active { outline: 0; }
+
+/* ----------------------------------------------
+MESSAGES
+------------------------------------------------- */
+.flash {
+  margin: 0 auto 15px;
+}
+
+.flash .message {
+  text-align: center;
+  border: 1px solid silver;
+  background-color: #f7f7f7;
+  width: 98%;
+}
+
+.flash .message p {
+  margin: 8px;
+}
+
+.flash .error, .flash .error-list {
+  border: 1px solid #ffbbbb;
+  background-color: #ffe28a;
+}
+
+.flash .warning {
+  background-color: #ffffcc;
+}
+
+.flash .notice {
+    background-color: #BBFFB6;
+    border: 1px solid #1FDF00;
+    padding: 10px;
+    text-align: center;
+    width: 97%;
+}
+
+.flash .success {
+  border: 1px solid #1fdf00;
+  background-color: #bbffb6;
+}
+
+.flash .error-list {
+  text-align: left;
+}
+
+.flash .error-list h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.flash .error-list ul {
+  padding-left: 22px;
+  line-height: 18px;
+  list-style-type: square;
+  margin-bottom: 15px;
+}
+
+.current {
+  background: #ffc824;
+  float: left;
+  padding: 0 14px;
+  line-height: 34px;
+  border-right: 1px solid;
+  border-right-color: #dddddd;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  *border-right-color: #dddddd;
+  color: black;
+}
+
+label {
+  color: #00264d;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 5px 0px 0px;
+  text-align: right;
+  float: left;
+}
+
+input[type="Textbox"] {
+  color: black;
+  font-size: 12px;
+  padding: 2px 0px 0px 5px;
+  text-align: left;
+  width: 300px;
+}
+
+input[type="Textbox"]:hover {
+  background-color: #c3d5d5;
+}
+
+input[type="Textbox"]:focus {
+  background-color: #c3d5d5;
+  border: solid 1px #00264d;
+}
+
+input[type="Textarea"] {
+  color: black;
+  font-size: 12px;
+  padding: 2px 0px 0px 5px;
+  text-align: left;
+  width: 99%;
+}
+
+select {
+  text-align: left;
+  font-size: 12px;
+  width: 310px;
+  padding: 0px 0px 0px 0px;
+  text-align: left;
+  font-size: 12px;
+  width: 310px;
+}
+
+
+/* ----------------------------------------------
+BUTTONS
+------------------------------------------------- */
+.btn, input[type="submit"] {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), color-stop(25%, white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(white, white 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, white, white 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(white, white 25%, #e6e6e6);
+  background-image: -o-linear-gradient(white, white 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  padding: 5px 14px 6px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  color: #f3f3f3;
+  font-size: 13px;
+  line-height: normal;
+  border: 1px solid #cccccc;
+  border-bottom-color: #bbbbbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+}
+
+
+.btn:hover {
+  background-position: 0 -15px;
+  color: #FFFF29;
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 1px dotted #666666;
+}
+
+.btn.success, .btn.standard, .btn.error, .btn.info, .btn.danger, input[type="submit"] {
+  background-color: #7C76B8;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#231D40), to(#7C76B8));
+  background-image: -moz-linear-gradient(top, #231D40, #7C76B8);
+  background-image: -ms-linear-gradient(top, #231D40, #7C76B8);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #231D40), color-stop(100%, #7C76B8));
+  background-image: -webkit-linear-gradient(top, #231D40, #7C76B8);
+  background-image: -o-linear-gradient(top, #231D40, #7C76B8);
+  background-image: linear-gradient(top, #231D40, #7C76B8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#231D40', endColorstr='#7C76B8', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #ffc824 #ffc824 #3d773d;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------------------------------------
+TABLE
+------------------------------------------------- */
+table.tableStandard {
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table.tableStandard thead th {
+  background-color: #666666;
+  padding: 6px 5px;
+  text-align: left;
+  border: solid 1px #e8eef4;
+  color: #f7f7f7;
+}
+
+table.tableStandard thead th .sort_link {
+  color: #ffc824;
+}
+
+table.tableStandard td {
+  padding: 5px;
+  border: solid 1px #e8eef4;
+}
+
+table.tableStandard tr td.actions a {
+  visibility: hidden;
+}
+
+table.tableStandard tr .default_row td {
+  background-color: #ffc824;
+  color: white;
+}
+
+table.tableStandard thead tr:hover td.actions a {
+  visibility: visible;
+}
+
+table.tableStandard tr:hover {
+  background-color: #f0f0f0;
+}
+
+table.tableStandard .default_row td {
+  background-color: #ffc824;
+  font-weight: bold;
+}
