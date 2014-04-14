@@ -1,12 +1,16 @@
+<div id="forkme" onclick="return forkme();" style="cursor: pointer;" ></div>
 <div style='text-align: center;'>
   <h1>Image Converter</h1><span>by Pablo van Diest</span>
   <br/>
 </div>
 
-From format: <%= select_tag 'from_format', options_for_select([ '.gif', '.jpg' ], '.gif'), :class => "select" %>
-<br/>
-To format: <%= select_tag 'to_format', options_for_select([ '.gif', '.jpg' ], '.jpg'), :class => "select" %>
-<div id='picture' class="dropzone"></div>
+
+<div style='text-align: center;'>
+  From format: <%= select_tag 'from_format', options_for_select([ '.gif', '.jpg' ], '.gif'), :class => "select" %>
+  <br/>
+  To format: <%= select_tag 'to_format', options_for_select([ '.gif', '.jpg' ], '.jpg'), :class => "select" %>
+  <div id='picture' class="dropzone"></div>
+</div>
 <br/>
 
 <div style='text-align: center;'>

@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 //= require dropzone
+
+function forkme(){
+  window.open('https://github.com/PablovanDiest')
+}

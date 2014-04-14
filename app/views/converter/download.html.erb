@@ -1,3 +1,4 @@
+<div id="forkme" onclick="return forkme();" style="cursor: pointer;" ></div>
 <div style='text-align: center;'>
   <h1>Image Converter</h1><span>by Pablo van Diest</span>
   <br/>
@@ -13,9 +14,9 @@
     <% file_name = file.gsub(@folder_name.to_s, '').to_s[1..99] %>
     <div class="dz-preview dz-processing dz-image-preview">
       <div class="dz-details">
-        <div class="dz-filename" style="cursor: hand;">
-          <div class="dz-size dz-clickable" data-dz-size="" data-file-name="<%= file.gsub(@folder_rest.to_s, '') %>" style="left: 0px;top: 0px;" >
-            <img data-dz-thumbnail="" alt="<%= file_name %>" src="<%= file.gsub(@folder_rest.to_s, '') %>">
+        <div class="dz-filename" >
+          <div class="dz-size" data-dz-size="" data-file-name="<%= file.gsub(@folder_rest.to_s, '') %>" style="left: 0px;top: 0px;" >
+            <img data-dz-thumbnail="" alt="<%= file_name %>" style="cursor: pointer;" src="<%= file.gsub(@folder_rest.to_s, '') %>">
           </div>
           <div class="dz-progress">
             <span>
